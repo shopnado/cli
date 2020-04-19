@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  dev:
+    build: .
+    command: go test -v -cover ./...
+    volumes:
+      - .:/go/src/github.com/bold-commerce/go-shopify
